@@ -10,7 +10,7 @@
     tools:context=".MovieDetail">
 
     <ImageView
-        android:id="@+id/image_header"
+        android:id="@+id/movie_header"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -24,7 +24,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/text_title"
+            android:id="@+id/movie_title_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/mustard"
@@ -45,13 +45,33 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_sinopsis"
+        android:id="@+id/movie_summary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Sinopsis"
         android:textColor="@color/babygray"
         android:textSize="14sp"
         android:padding="20dp"
         />
+
+    <Button
+        android:id="@+id/buyTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/almostblack"
+        android:background="@drawable/round_button"
+        android:text="@string/buy_button"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightgray"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_marginTop="7dp"
+        android:id="@+id/seatsLeft"/>
 
 </LinearLayout>

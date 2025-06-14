@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/almostblack"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/summary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Ticket"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/mustard"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/movieTitleSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie: Example"
+        android:textSize="20sp"
+        android:textColor="@color/babygray"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/seatSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat: A3"
+        android:textSize="20sp"
+        android:textColor="@color/babygray"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/customerNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColorHint="@color/babygray"
+        android:textColor="@color/mustard"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/confirmPurchaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Purchase"
+        android:textColor="@color/almostblack"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>
